@@ -14,6 +14,12 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    Secret : ACTIONS_STEP_DEBUG
+    Value  : true
+
+    Secret : ACTIONS_RUNNER_DEBUG
+    Value  : true
+
     strategy:
       matrix:
         node-version: [14.x, 16.x]
@@ -30,3 +36,6 @@ jobs:
     - run: npm run lint
     - run: npm run build
     - run: npm test
+
+
+
