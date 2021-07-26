@@ -14,9 +14,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    ACTIONS_STEP_DEBUG: true
-    ACTIONS_RUNNER_DEBUG: true
-
     strategy:
       matrix:
         node-version: [14.x, 16.x]
