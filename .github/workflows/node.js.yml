@@ -14,11 +14,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    Secret : ACTIONS_STEP_DEBUG
-    Value  : true
-
-    Secret : ACTIONS_RUNNER_DEBUG
-    Value  : true
+    ACTIONS_STEP_DEBUG: true
+    ACTIONS_RUNNER_DEBUG: true
 
     strategy:
       matrix:
